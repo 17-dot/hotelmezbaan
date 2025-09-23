@@ -1,3 +1,16 @@
+@media (max-width: 600px) {
+  .footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 16px auto;
+    width: 100%;
+  }
+  .footer .logo img {
+    margin-right: 40px;
+    display: block;
+  }
+}
 /* Ensure preloader text is perfectly centered on mobile */
 @media (max-width: 600px) {
   .preload {

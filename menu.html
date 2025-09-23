@@ -76,7 +76,9 @@
         <button class="close-btn" aria-label="close menu" data-nav-toggler>
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
-
+        <a href="index.html" class="logo">
+          <img src="./assets/images/mlogo.svg" width="100" height="40"  alt="Hotel Mezbaan - Home">
+        </a>
 
         <ul class="navbar-list">
 
@@ -628,6 +630,22 @@
   .menu .menu-filters li:hover {
     background: #b08d4a;
     color: #fff;
+  }
+}
+</style>
+
+<style>
+@media (max-width: 600px) {
+  .footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 16px auto;
+    width: 100%;
+  }
+  .footer .logo img {
+    margin: 0 auto;
+    display: block;
   }
 }
 </style>
