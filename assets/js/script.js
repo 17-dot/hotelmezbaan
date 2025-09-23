@@ -13,8 +13,6 @@ navLinks.forEach(function(link) {
 });
 'use strict';
 
-
-
 /**
  * PRELOAD
  * 
