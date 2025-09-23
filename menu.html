@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Mezbaan - Full Menu</title>
+  <meta name="description" content="Explore our full menu at Hotel Mezbaan - A wide selection of delicious dishes">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+</head>
+
+<body id="top">
+  <!-- Preloader -->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Hotel Mezbaan</p>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container">
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">
+          Patel Compound, Dhamankar Naka, Bhiwandi
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">Daily : 6.00 pm to 12.00 </span>
+      </div>
+
+      <a href="tel:+919022274924" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">+91 9022274924</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">booking@restaurant.com</span>
+      </a>
+    </div>
+  </div>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/mlogo.svg" width="100" height="40"  alt="Hotel Mezbaan - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Hotel Mezbaan - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline ">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="menu.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Gallery</span>
+            </a>
+          </li> -->
+
+          <li class="navbar-item">
+            <a href="tel:+919022274924" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            Patel Compound, Dhamankar Naka, <br>
+             Bhiwandi - 421302
+          </address>
+
+          <p class="body-4 navbar-text">Open: 6.00 pm - 12 </p>
+
+          <a href="mailto:booking@hotelmezbaan.com" class="body-4 sidebar-link">booking@Hotel Mezbaan.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+91 9022274924" class="body-1 contact-number hover-underline">
+            +91 9022274924
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="tel:+919022274924" class="btn btn-secondary">
+        <span class="text text-1">Order Now</span>
+
+        <span class="text text-2" aria-hidden="true">Order Now</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+<!-- Menu Section -->
+<section id="menu" class="menu">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Check Our Tasty Menu</h2>
+      <p>Discover our delicious offerings crafted with authentic Indian flavors</p>
+    </div>
+
+    <ul class="menu-filters">
+      <li data-filter="*" class="filter-active">All</li>
+      <li data-filter=".filter-starters">Starters</li>
+      <li data-filter=".filter-meats">Gravy</li>
+      <li data-filter=".filter-specialty">Roti</li>
+    </ul>
+
+    <div class="menu-container menu-two-columns">
+      <div class="menu-column">
+        <!-- Starter Items (Column 1) -->
+        <div class="menu-item filter-starters">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Chicken Pakora">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Chicken Pakora</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0AChicken%20Pakora%0ARs%20250" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 250</a>
+          </div>
+          <p class="menu-ingredients">
+            Crispy fried chicken pieces marinated with Indian spices, gram flour batter, and served with mint chutney
+          </p>
+        </div>
+
+        <div class="menu-item filter-meats">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Mutton Curry">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Mutton Curry</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0AMutton%20Curry%0ARs%20600" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 600</a>
+          </div>
+          <p class="menu-ingredients">
+            Tender mutton pieces slow-cooked in rich onion-tomato gravy with traditional Indian spices and fresh herbs
+          </p>
+        </div>
+
+        <div class="menu-item filter-meats">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Prawn Gravy">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Prawn Gravy</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0APrawn%20Gravy%0ARs%20700" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 700</a>
+          </div>
+          <p class="menu-ingredients">
+            Fresh prawns cooked in a creamy coconut and spice gravy, served with aromatic basmati rice and naan bread
+          </p>
+        </div>
+
+        <div class="menu-item filter-specialty">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Butter Chicken">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Butter Chicken</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0AButter%20Chicken%0ARs%20350" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 350</a>
+          </div>
+          <p class="menu-ingredients">
+            Signature dish - chicken tandoori in velvety tomato butter sauce with cream, cashew nuts, and mild spices
+          </p>
+        </div>
+
+        <div class="menu-item filter-specialty">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Lamb Rogan Josh">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Lamb Rogan Josh</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0ALamb%20Rogan%20Josh%0ARs%20650" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 650</a>
+          </div>
+          <p class="menu-ingredients">
+            Kashmiri specialty - tender lamb cooked with yogurt, fennel seeds, and aromatic whole spices in rich gravy
+          </p>
+        </div>
+
+        <div class="menu-item filter-veg">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Dal Makhani">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Dal Makhani</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0ADal%20Makhani%0ARs%20250" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 250</a>
+          </div>
+          <p class="menu-ingredients">
+            Black lentils slow-cooked overnight with butter, cream, tomatoes, and finished with a tadka of garlic and cumin
+          </p>
+        </div>
+      </div>
+      
+      <div class="menu-column">
+        <!-- Starter Items (Column 2) -->
+        <div class="menu-item filter-starters">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Paneer Tikka">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Paneer Tikka</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0APaneer%20Tikka%0ARs%20300" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 300</a>
+          </div>
+          <p class="menu-ingredients">
+            Cubes of cottage cheese marinated in yogurt and aromatic spices, grilled to perfection with bell peppers
+          </p>
+        </div>
+
+        <div class="menu-item filter-meats">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Roasted Chicken">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Roasted Chicken</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0ARoasted%20Chicken%0ARs%20299" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 299</a>
+          </div>
+          <p class="menu-ingredients">
+            Succulent chicken marinated in yogurt and Indian spices, slow-roasted to golden perfection with aromatic herbs
+          </p>
+        </div>
+
+        <div class="menu-item filter-meats">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Mutton Biryani">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Mutton Biryani</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0AMutton%20Biryani%0ARs%20450" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 450</a>
+          </div>
+          <p class="menu-ingredients">
+            Fragrant basmati rice layered with tender mutton pieces, saffron, fried onions, and signature biryani spices
+          </p>
+        </div>
+
+        <div class="menu-item filter-specialty">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Tandoori Kebab Platter">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Tandoori Kebab Platter</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0ATandoori%20Kebab%20Platter%0ARs%20800" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 800</a>
+          </div>
+          <p class="menu-ingredients">
+            Assortment of chicken tikka, malai kebab, fish tikka, seekh kebab and lamb chops from our tandoor oven
+          </p>
+        </div>
+
+        <div class="menu-item filter-veg">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Palak Paneer">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Palak Paneer</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0APalak%20Paneer%0ARs%20300" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 300</a>
+          </div>
+          <p class="menu-ingredients">
+            Fresh spinach puree with cottage cheese cubes, tempered with garlic, cumin seeds, and finished with cream
+          </p>
+        </div>
+
+        <div class="menu-item filter-veg">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Malai Kofta">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Malai Kofta</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0AMalai%20Kofta%0ARs%20350" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 350</a>
+          </div>
+          <p class="menu-ingredients">
+            Soft paneer and potato balls in a rich, creamy tomato and cashew gravy, garnished with cream and nuts
+          </p>
+        </div>
+
+        <div class="menu-item filter-veg">
+          <div class="menu-img">
+            <img src="./assets/images/starters.png" alt="Veg Hakka Noodles">
+          </div>
+          <div class="menu-content">
+            <a href="#" class="menu-name">Veg Hakka Noodles</a>
+            <a href="https://wa.me/919022274924?text=Order%3A%20%0AVeg%20Hakka%20Noodles%0ARs%20200" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 200</a>
+          </div>
+          <p class="menu-ingredients">
+            Stir-fried noodles tossed with fresh vegetables, soy sauce, and Indo-Chinese spices
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Optimized Menu Section CSS -->
+<style>
+/* Menu Section Styles */
+.menu {
+  padding: 60px 0;
+  margin-top: 180px; /* Increased to prevent overlap with header */
+}
+
+.menu-two-columns {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.menu-column {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .menu-two-columns {
+    flex-direction: column;
+    gap: 0;
+  }
+  .menu-column {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+.menu .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.menu .section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.menu .section-header p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.menu .menu-filters {
+  padding: 0;
+  margin: 0 auto 30px;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+
+.menu .menu-filters li {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Playfair Display", serif;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.menu .menu-filters li:hover,
+.menu .menu-filters li.filter-active {
+  color: #ffffff;
+  background: #cda45e;
+}
+
+.menu .menu-filters li:last-child {
+  margin-right: 0;
+}
+
+.menu .menu-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.menu .menu-item {
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 1;
+}
+
+.menu .menu-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  float: left;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  margin-right: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu .menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu .menu-content {
+  margin-left: 95px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 10px 0;
+}
+
+.menu .menu-content::after {
+  content: "......................................................................";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+
+.menu .menu-content a {
+  color: #ffffff;
+  background: transparent;
+  padding-right: 10px;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+}
+
+.menu .menu-content a:hover {
+  color: #cda45e;
+}
+
+.menu .menu-content span {
+  background: #0c0b09;
+  color: #cda45e;
+  position: relative;
+  z-index: 3;
+  padding: 5px 15px;
+  font-weight: 700;
+  border-radius: 20px;
+  font-size: 1rem;
+  border: 2px solid #cda45e;
+}
+
+.menu .menu-ingredients {
+  margin-left: 95px;
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 5px;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    padding: 40px 0;
+  }
+  
+  .menu .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .menu .menu-filters {
+    margin-bottom: 20px;
+    padding: 3px;
+  }
+  
+  .menu .menu-filters li {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin: 2px;
+  }
+  
+  .menu .menu-content {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu .menu-content {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .menu .menu-content::after {
+    display: none;
+  }
+  .menu .menu-content a {
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu .menu-content span {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  .menu .menu-ingredients {
+    margin-left: 0;
+    text-align: center;
+  }
+  .menu .menu-img {
+    float: none;
+    margin: 0 auto 15px;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu .menu-filters {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+  .menu .menu-filters::-webkit-scrollbar {
+    display: none;
+  }
+  .menu .menu-filters li {
+    min-width: 110px;
+    margin: 0 4px;
+    text-align: center;
+    width: auto;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 24px;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+  }
+  .menu .menu-filters li.filter-active {
+    background: #cda45e;
+    color: #fff;
+  }
+  .menu .menu-filters li:hover {
+    background: #b08d4a;
+    color: #fff;
+  }
+}
+</style>
+
+<script>
+(function() {
+  "use strict";
+
+  // Optimized Menu Filter Functionality
+  function initMenuFilters() {
+    const menuFilters = document.querySelectorAll('.menu-filters li');
+    const menuItems = document.querySelectorAll('.menu-container .menu-item');
+    
+    if (!menuFilters.length) return;
+
+    menuFilters.forEach(function(filter) {
+      filter.addEventListener('click', function() {
+        // Remove active class from all filters
+        menuFilters.forEach(function(f) {
+          f.classList.remove('filter-active');
+        });
+        
+        // Add active class to clicked filter
+        this.classList.add('filter-active');
+        
+        // Get filter data attribute
+        const filterValue = this.getAttribute('data-filter');
+        
+        // Show/hide menu items based on filter
+        menuItems.forEach(function(item) {
+          if (filterValue === '*') {
+            // Show all items
+            item.style.display = 'block';
+          } else {
+            // Hide all items first
+            item.style.display = 'none';
+            
+            // Show filtered items
+            if (item.classList.contains(filterValue.replace('.', ''))) {
+              item.style.display = 'block';
+            }
+          }
+        });
+      });
+    });
+  }
+
+  // Add location to WhatsApp order links
+  // function addLocationToOrderLinks() {
+  //   var orderLinks = document.querySelectorAll('.menu-price');
+  //   orderLinks.forEach(function(link) {
+  //     link.addEventListener('click', function(e) {
+  //       // Only run if geolocation is available
+  //       if (navigator.geolocation) {
+  //         e.preventDefault();
+  //         var originalHref = this.getAttribute('href');
+  //         var that = this;
+  //         navigator.geolocation.getCurrentPosition(function(position) {
+  //           var lat = position.coords.latitude;
+  //           var lon = position.coords.longitude;
+  //           var locationText = encodeURIComponent("\nLocation: https://maps.google.com/?q=" + lat + "," + lon);
+  //           var newHref = originalHref + locationText;
+  //           window.open(newHref, '_blank');
+  //         }, function(error) {
+  //           // If user denies or error, just open original link
+  //           window.open(originalHref, '_blank');
+  //         });
+  //       }
+  //     });
+  //   });
+  // }
+
+  // Initialize menu functionality when DOM is loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      initMenuFilters();
+      // addLocationToOrderLinks();
+    });
+  } else {
+    initMenuFilters();
+    // addLocationToOrderLinks();
+  }
+
+})();
+</script>
+
+  <!-- Footer -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/mlogo.svg" width="110" height="40" loading="lazy" alt="Hotel Mezbaan home">
+          </a>
+
+          <address class="body-4">
+            Patel Compound, Dhamankar Naka, Bhiwandi
+          </address>
+
+          <a href="mailto:booking@HotelMezbaan.com" class="body-4 contact-link">booking@Hotel Mezbaan.com</a>
+
+          <a href="tel:+91 9022274924" class="body-4 contact-link">Booking Request : +91 9022274924</a>
+
+          <p class="body-4">
+            Open : 06:00 pm - 12:00 
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="menu.html" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="https://maps.app.goo.gl/YZU4HDe34SzZKekR9" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2025 Hotel Mezbaan. All Rights Reserved | Designed and Developed by <a href="https://17dot.in"
+            target="_blank" class="link">17 Dot</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- Custom cursor -->
+  <div class="cursor" data-cursor></div>
+
+  <!-- Ionicon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Back to Top Button -->
+  <a href="#top" class="back-to-top" id="backToTop">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <!-- Custom JS -->
+  <script>
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
