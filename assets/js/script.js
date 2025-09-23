@@ -1,3 +1,16 @@
+/**
+ * Close navbar when a nav link is clicked (for mobile/hamburger menu)
+ */
+const navLinks = document.querySelectorAll('.navbar-link');
+navLinks.forEach(function(link) {
+  link.addEventListener('click', function() {
+    if (navbar.classList.contains('active')) {
+      navbar.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.classList.remove('nav-active');
+    }
+  });
+});
 'use strict';
 
 
