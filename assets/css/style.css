@@ -1,3 +1,32 @@
+/* Ensure preloader text is perfectly centered on mobile */
+@media (max-width: 600px) {
+  .preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9999;
+    background: #fff; /* or your preloader background */
+  }
+  .preload .circle {
+    margin: 0 auto 16px auto;
+  }
+  .preload .text {
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* Center preloader text on mobile view */
 @media (max-width: 600px) {
   .preload {
