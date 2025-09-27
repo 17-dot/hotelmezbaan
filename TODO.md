@@ -1,0 +1,5 @@
+- [x] Add QRCode.js CDN script to menu.html head
+- [x] Add modal HTML for QR display before closing body
+- [x] Add CSS for modal styling
+- [x] Modify JavaScript to handle .menu-price clicks: extract price, generate UPI QR, show modal, open WhatsApp on proceed
+- [x] Test the functionality

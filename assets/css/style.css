@@ -2220,3 +2220,7 @@ textarea.input-field {
 }
 
 
+#qrcode img {
+  background: #fff;
+  padding: 15px;
+}

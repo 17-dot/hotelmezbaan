@@ -360,6 +360,21 @@
   </div>
 </section>
 
+<!-- QR Code Modal -->
+<div id="qrModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Scan QR Code to Pay</h2>
+    <div id="qrcode" style="display:flex;justify-content:center;align-items:center;"></div>
+    <p style="margin:10px 0 0 0;">Amount: Rs <span id="qrAmount"></span></p>
+    <p id="qrNote" style="color:#cda45e;font-size:0.95rem;margin:8px 0 16px 0;">Use any UPI app (PhonePe, GPay, Paytm, etc.) to scan this QR code.</p>
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:center;">
+      <button id="payBtn" class="btn btn-secondary" style="width:100%;max-width:320px;">Pay Now</button>
+      <button id="proceedBtn" class="btn btn-secondary" style="width:100%;max-width:320px;">Proceed to WhatsApp</button>
+    </div>
+  </div>
+</div>
+
 <!-- Optimized Menu Section CSS -->
 <style>
 /* Menu Section Styles */
@@ -635,17 +650,72 @@
 </style>
 
 <style>
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+  background-color: #0c0b09;
+  margin: 10vh auto;
+  padding: 20px 10px 24px 10px;
+  border: 1px solid #cda45e;
+  border-radius: 10px;
+  width: 95vw;
+  max-width: 400px;
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.close {
+  color: #cda45e;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+#qrcode {
+  margin: 20px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#qrcode canvas, #qrcode img {
+  max-width: 90vw;
+  height: auto;
+}
+#qrAmount {
+  font-weight: bold;
+  color: #cda45e;
+}
 @media (max-width: 600px) {
-  .footer .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 16px auto;
-    width: 100%;
+  .modal-content {
+    margin: 8vh auto;
+    padding: 12px 2vw 18px 2vw;
+    max-width: 98vw;
+    width: 98vw;
   }
-  .footer .logo img {
-    margin: 0 auto;
-    display: block;
+  #qrcode {
+    margin: 12px 0 0 0;
+  }
+  #qrcode canvas, #qrcode img {
+    max-width: 80vw;
+  }
+  #qrNote {
+    font-size: 0.93rem;
   }
 }
 </style>
@@ -860,16 +930,19 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <!-- QRCode.js for generating QR codes -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
   <!-- Back to Top Button -->
   <a href="#top" class="back-to-top" id="backToTop">
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
 
   <!-- Custom JS -->
+
   <script>
     // Back to top button
     const backToTop = document.getElementById('backToTop');
-    
     window.addEventListener('scroll', () => {
       if (window.pageYOffset > 300) {
         backToTop.classList.add('visible');
@@ -877,15 +950,12 @@
         backToTop.classList.remove('visible');
       }
     });
-    
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           window.scrollTo({
@@ -895,7 +965,88 @@
         }
       });
     });
+
+    // QR Code Modal Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('qrModal');
+      const closeBtn = document.querySelector('.close');
+      const proceedBtn = document.getElementById('proceedBtn');
+      const payBtn = document.getElementById('payBtn');
+      const qrAmount = document.getElementById('qrAmount');
+      const qrcodeDiv = document.getElementById('qrcode');
+
+      let currentItem = '';
+      let currentPrice = '';
+      let lastUpiUrl = "";
+
+      // Handle menu price clicks
+      document.querySelectorAll('.menu-price').forEach(function(priceElement) {
+        priceElement.addEventListener('click', function(e) {
+          e.preventDefault();
+          // Extract price from text (e.g., "Rs 250")
+          const priceText = this.textContent.trim();
+          const priceMatch = priceText.match(/Rs\s+(\d+)/);
+          if (priceMatch) {
+            currentPrice = priceMatch[1];
+            qrAmount.textContent = currentPrice;
+            // Get item name from the menu item
+            const menuItem = this.closest('.menu-item');
+            const itemName = menuItem.querySelector('.menu-name').textContent.trim();
+            currentItem = itemName;
+            // Generate UPI QR Code
+            generateUPIQR(currentPrice);
+            // Show modal
+            modal.style.display = 'block';
+          }
+        });
+      });
+
+      // Close modal when clicking close button
+      closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        qrcodeDiv.innerHTML = '';
+      });
+
+      // Close modal when clicking outside
+      window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+          qrcodeDiv.innerHTML = '';
+        }
+      });
+
+      // Proceed to WhatsApp
+      proceedBtn.addEventListener('click', function() {
+        const whatsappUrl = `https://wa.me/919022274924?text=Order:%20%0A${encodeURIComponent(currentItem)}%0ARs%20${currentPrice}%0A%0APayment%20completed%20via%20UPI%20QR%20Code`;
+        window.open(whatsappUrl, '_blank');
+        modal.style.display = 'none';
+        qrcodeDiv.innerHTML = '';
+      });
+
+      // Pay Now button → open UPI link
+      payBtn.addEventListener('click', function() {
+        if (lastUpiUrl) {
+          window.location.href = lastUpiUrl;
+        }
+      });
+
+      function generateUPIQR(amount) {
+        qrcodeDiv.innerHTML = '';
+        // UPI payment URL (with more parameters for compatibility)
+        lastUpiUrl = `upi://pay?pa=muradetaha@oksbi&pn=Hotel%20Mezbaan&am=${amount}&cu=INR&tn=Payment%20for%20${encodeURIComponent(currentItem)}&tr=ORDER${Date.now()}&mode=02`;
+        // Generate QR code (responsive size)
+        new QRCode(qrcodeDiv, {
+          text: lastUpiUrl,
+          width: Math.min(window.innerWidth * 0.7, 220),
+          height: Math.min(window.innerWidth * 0.7, 220),
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H
+        });
+      }
+    });
   </script>
+
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
