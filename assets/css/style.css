@@ -788,16 +788,34 @@ body.nav-active { overflow: hidden; }
 .navbar .logo {
   max-width: max-content;
   margin-inline: auto;
-  margin-block-end: 60px;
+  /* reduce space above Visit Us block in sidebar */
+  margin-block-end: 28px;
 
   
 }
 .logo {
   padding-left: 40px;
 }
-.navbar-list {
+ .navbar-list {
   border-block-end: 1px solid var(--white-alpha-20);
-  margin-block-end: 100px;
+  /* reduce bottom spacing so sidebar content sits closer to top area */
+  margin-block-end: 40px;
+
+  /* ensure list doesn't add unexpected top gap */
+  padding-block-start: 0;
+}
+
+/* Tighten spacing inside the sidebar's centered block (Visit Us) */
+.navbar .text-center {
+  margin-block-start: 0;
+  padding-block-start: 0;
+}
+
+/* On very small screens, make the sidebar items more compact */
+@media (max-width: 420px) {
+  .navbar { padding-inline: 18px; }
+  .navbar .logo { margin-block-end: 20px; }
+  .navbar .text-center { padding-block-start: 6px; }
 }
 
 .navbar-item { border-block-start: 1px solid var(--white-alpha-20); }
