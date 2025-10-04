@@ -180,4 +180,62 @@ window.addEventListener("mousemove", function (event) {
 
 });
 
+    // Image modal (click to enlarge)
+    (function() {
+      const modal = document.getElementById('imageModal');
+      if (!modal) return;
+      const overlay = modal.querySelector('[data-image-modal-overlay]');
+      const imgEl = modal.querySelector('.image-modal-img');
+      const closeBtn = modal.querySelector('.image-modal-close');
+
+      // Select images inside menu items (adjust selector if necessary)
+      const menuImages = document.querySelectorAll('.menu-img img');
+
+      const openModal = (src, alt) => {
+        imgEl.src = src;
+        imgEl.alt = alt || '';
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeModal = () => {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        imgEl.src = '';
+        imgEl.alt = '';
+        document.body.style.overflow = '';
+      };
+
+      menuImages.forEach(img => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', (e) => {
+          openModal(img.src, img.alt);
+        });
+      });
+
+      // Also open modal when menu name is clicked — find the image in the same menu-item
+      const menuNames = document.querySelectorAll('.menu-name');
+      menuNames.forEach(name => {
+        name.style.cursor = 'pointer';
+        name.addEventListener('click', (e) => {
+          // prevent default if it's an anchor
+          if (e.target.tagName.toLowerCase() === 'a') e.preventDefault();
+          const item = name.closest('.menu-item');
+          if (!item) return;
+          const img = item.querySelector('.menu-img img');
+          if (img) openModal(img.src, img.alt || name.textContent.trim());
+        });
+      });
+
+      overlay.addEventListener('click', closeModal);
+      closeBtn.addEventListener('click', closeModal);
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeModal();
+        }
+      });
+    })();
+
 

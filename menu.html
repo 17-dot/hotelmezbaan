@@ -173,80 +173,377 @@
       <p>Discover our delicious offerings crafted with authentic Indian flavors</p>
     </div>
 
+    <!-- Search (mobile friendly) -->
+    <div class="menu-search" role="search" aria-label="Search menu">
+      <input id="menuSearch" type="search" placeholder="Search dishes, ingredients or price (e.g. 'chicken' or '150')" aria-label="Search dishes" autocomplete="off">
+      <button id="menuSearchClear" type="button" aria-label="Clear search">✕</button>
+    </div>
+
     <ul class="menu-filters">
       <li data-filter="*" class="filter-active">All</li>
-      <li data-filter=".filter-starters">Starters</li>
-      <li data-filter=".filter-meats">Gravy</li>
+      <li data-filter=".filter-starters">Semi Dry</li>
+      <li data-filter=".filter-meats">Main Course</li>
+      <li data-filter=".filter-specialty">Rice</li>
+      <li data-filter=".filter-specialty">Roti</li>
       <li data-filter=".filter-specialty">Roti</li>
     </ul>
 
     <div class="menu-container menu-two-columns">
       <div class="menu-column">
         <!-- Starter Items (Column 1) -->
-        <div class="menu-item filter-starters">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Chicken Pakora">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Chicken Pakora</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0AChicken%20Pakora%0ARs%20250" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 250</a>
-          </div>
-          <p class="menu-ingredients">
-            Crispy fried chicken pieces marinated with Indian spices, gram flour batter, and served with mint chutney
-          </p>
-        </div>
 
-        <div class="menu-item filter-meats">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Mutton Curry">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Mutton Curry</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0AMutton%20Curry%0ARs%20600" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 600</a>
-          </div>
-          <p class="menu-ingredients">
-            Tender mutton pieces slow-cooked in rich onion-tomato gravy with traditional Indian spices and fresh herbs
-          </p>
-        </div>
+   
+        <!-- 1 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/singapoore.jpg" alt="Chicken Mezbaan Spl.">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Mezbaan Spl.</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Mezbaan%20Spl.%20-%20Rs%20150" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 150</a>
+  </div>
+  <p class="menu-ingredients">
+    Signature house special chicken, cooked with chef’s secret spices and rich flavors.
+  </p>
+</div>
 
-        <div class="menu-item filter-meats">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Prawn Gravy">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Prawn Gravy</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0APrawn%20Gravy%0ARs%20700" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 700</a>
-          </div>
-          <p class="menu-ingredients">
-            Fresh prawns cooked in a creamy coconut and spice gravy, served with aromatic basmati rice and naan bread
-          </p>
-        </div>
+<!-- 2 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Turkish Dry">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Turkish Dry</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Turkish%20Dry%20-%20Rs%20110" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 110</a>
+  </div>
+  <p class="menu-ingredients">
+    Dry-fried chicken tossed in Turkish-inspired herbs and aromatic seasoning.
+  </p>
+</div>
 
-        <div class="menu-item filter-specialty">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Butter Chicken">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Butter Chicken</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0AButter%20Chicken%0ARs%20350" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 350</a>
-          </div>
-          <p class="menu-ingredients">
-            Signature dish - chicken tandoori in velvety tomato butter sauce with cream, cashew nuts, and mild spices
-          </p>
-        </div>
+<!-- 3 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Red Creamy">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Red Creamy</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Red%20Creamy%20-%20Rs%20130" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 130</a>
+  </div>
+  <p class="menu-ingredients">
+    Juicy chicken in a rich, red creamy sauce with mild spices and a velvety texture.
+  </p>
+</div>
 
-        <div class="menu-item filter-specialty">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Lamb Rogan Josh">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Lamb Rogan Josh</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0ALamb%20Rogan%20Josh%0ARs%20650" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 650</a>
-          </div>
-          <p class="menu-ingredients">
-            Kashmiri specialty - tender lamb cooked with yogurt, fennel seeds, and aromatic whole spices in rich gravy
-          </p>
-        </div>
+<!-- 4 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken White Sauce">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken White Sauce</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20White%20Sauce%20-%20Rs%20130" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 130</a>
+  </div>
+  <p class="menu-ingredients">
+    Tender chicken cooked in creamy white sauce with a buttery, garlicky flavor.
+  </p>
+</div>
+
+<!-- 5 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Lollipop Oil Dry (4pcs)">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Lollipop Oil Dry (4pcs)</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Lollipop%20Oil%20Dry%20(4pcs)%20-%20Rs%2080" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 80</a>
+  </div>
+  <p class="menu-ingredients">
+    Crispy fried chicken lollipops with a simple dry seasoning, perfect for snacking.
+  </p>
+</div>
+
+<!-- 6 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Lollipop Masala Dry (4pcs)">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Lollipop Masala Dry (4pcs)</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Lollipop%20Masala%20Dry%20(4pcs)%20-%20Rs%20100" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 100</a>
+  </div>
+  <p class="menu-ingredients">
+    Spicy and flavorful chicken lollipops coated with tangy Indian masala.
+  </p>
+</div>
+
+<!-- 7 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Cheese Lollipop Masala Dry (4pcs)">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Cheese Lollipop Masala Dry (4pcs)</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Cheese%20Lollipop%20Masala%20Dry%20(4pcs)%20-%20Rs%20130" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 130</a>
+  </div>
+  <p class="menu-ingredients">
+    Chicken lollipops tossed with masala and loaded with melted cheese topping.
+  </p>
+</div>
+
+<!-- 8 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Chilly">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Chilly</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Chilly%20-%20Rs%2080" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 80</a>
+  </div>
+  <p class="menu-ingredients">
+    Classic Indo-Chinese dish with spicy fried chicken tossed in green chilies & onions.
+  </p>
+</div>
+
+<!-- 9 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Manchurian">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Manchurian</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Manchurian%20-%20Rs%2090" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 90</a>
+  </div>
+  <p class="menu-ingredients">
+    Juicy chicken balls cooked in a spicy, tangy Manchurian sauce.
+  </p>
+</div>
+
+<!-- 10 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken 65">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken 65</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%2065%20-%20Rs%2090" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 90</a>
+  </div>
+  <p class="menu-ingredients">
+    Famous South Indian-style spicy fried chicken, crispy outside and juicy inside.
+  </p>
+</div>
+
+<!-- 11 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken 95">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken 95</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%2095%20-%20Rs%2090" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 90</a>
+  </div>
+  <p class="menu-ingredients">
+    Spicy and crispy chicken with bold flavors, a special twist to the classic 65.
+  </p>
+</div>
+
+<!-- 1 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Butter Chicken">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Butter Chicken</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Butter%20Chicken%20-%20Rs%20120" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 120</a>
+  </div>
+  <p class="menu-ingredients">
+    Juicy chicken cooked in a creamy tomato-butter gravy with aromatic spices.
+  </p>
+</div>
+
+<!-- 2 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Cheese Garlic Butter Chicken">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Cheese Garlic Butter Chicken</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Cheese%20Garlic%20Butter%20Chicken%20-%20Rs%20140" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 140</a>
+  </div>
+  <p class="menu-ingredients">
+    A cheesy twist to butter chicken, cooked with garlic, butter and creamy sauce.
+  </p>
+</div>
+
+<!-- 3 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Butter Wala Spl.">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Butter Wala Spl.</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Butter%20Wala%20Spl.%20-%20Rs%20140" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 140</a>
+  </div>
+  <p class="menu-ingredients">
+    House special buttery chicken cooked in rich gravy with a hint of cream.
+  </p>
+</div>
+
+<!-- 4 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Afghani">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Afghani</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Afghani%20-%20Rs%20120" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 120</a>
+  </div>
+  <p class="menu-ingredients">
+    Creamy Afghani-style chicken with mild spices, yogurt, and a smoky touch.
+  </p>
+</div>
+
+<!-- 5 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Afghan Dried Fruit">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Afghan Dried Fruit</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Afghan%20Dried%20Fruit%20-%20Rs%20140" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 140</a>
+  </div>
+  <p class="menu-ingredients">
+    Royal Afghani chicken dish enriched with cashews, raisins, and dry fruits.
+  </p>
+</div>
+
+<!-- 6 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Kasturi">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Kasturi</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Kasturi%20-%20Rs%20180" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 180</a>
+  </div>
+  <p class="menu-ingredients">
+    Flavourful chicken curry prepared with fenugreek (kasturi methi) and rich spices.
+  </p>
+</div>
+
+<!-- 7 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Noorani">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Noorani</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Noorani%20-%20Rs%20180" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 180</a>
+  </div>
+  <p class="menu-ingredients">
+    A royal chicken preparation with creamy, nutty gravy and a rich aromatic blend.
+  </p>
+</div>
+
+<!-- RICE -->
+       <!-- 1 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Fried Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Fried Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Fried%20Rice%20-%20Rs%2060" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 60</a>
+  </div>
+  <p class="menu-ingredients">
+    Classic fried rice tossed with chicken, vegetables, soy sauce, and light spices.
+  </p>
+</div>
+
+<!-- 2 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Schezwan Fried Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Schezwan Fried Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Schezwan%20Fried%20Rice%20-%20Rs%2070" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 70</a>
+  </div>
+  <p class="menu-ingredients">
+    Spicy Schezwan sauce blended with chicken, rice, and fresh veggies for bold flavors.
+  </p>
+</div>
+
+<!-- 3 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Combination Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Combination Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Combination%20Rice%20-%20Rs%2070" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 70</a>
+  </div>
+  <p class="menu-ingredients">
+    A special mix of fried rice with chicken, egg, and vegetables for a hearty meal.
+  </p>
+</div>
+
+<!-- 4 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Chingari Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Chingari Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Chingari%20Rice%20-%20Rs%2080" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 80</a>
+  </div>
+  <p class="menu-ingredients">
+    Fiery chicken fried rice with spicy masala and a smoky tandoori-style flavor.
+  </p>
+</div>
+
+<!-- 5 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Singapuri Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Singapuri Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Singapuri%20Rice%20-%20Rs%2080" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 80</a>
+  </div>
+  <p class="menu-ingredients">
+    Indo-Chinese style fried rice with chicken, veggies, and a hint of tangy spices.
+  </p>
+</div>
+
+<!-- 6 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Tadka Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Tadka Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Tadka%20Rice%20-%20Rs%2080" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 80</a>
+  </div>
+  <p class="menu-ingredients">
+    Desi-style fried rice topped with a spicy tadka of garlic, onion, and fresh coriander.
+  </p>
+</div>
+
+<!-- 7 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Shanghai Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Shanghai Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Shanghai%20Rice%20-%20Rs%2080" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 80</a>
+  </div>
+  <p class="menu-ingredients">
+    Chinese-inspired chicken fried rice with bold flavors, soy, and chili seasoning.
+  </p>
+</div>
+
 
         <div class="menu-item filter-veg">
           <div class="menu-img">
@@ -264,57 +561,345 @@
       
       <div class="menu-column">
         <!-- Starter Items (Column 2) -->
-        <div class="menu-item filter-starters">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Paneer Tikka">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Paneer Tikka</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0APaneer%20Tikka%0ARs%20300" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 300</a>
-          </div>
-          <p class="menu-ingredients">
-            Cubes of cottage cheese marinated in yogurt and aromatic spices, grilled to perfection with bell peppers
-          </p>
-        </div>
+ 
+       <!-- 12 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Dragon">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Dragon</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Dragon%20-%20Rs%2090" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 90</a>
+  </div>
+  <p class="menu-ingredients">
+    Crispy fried chicken tossed with fiery sauces, chilies, and a hint of garlic.
+  </p>
+</div>
 
-        <div class="menu-item filter-meats">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Roasted Chicken">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Roasted Chicken</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0ARoasted%20Chicken%0ARs%20299" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 299</a>
-          </div>
-          <p class="menu-ingredients">
-            Succulent chicken marinated in yogurt and Indian spices, slow-roasted to golden perfection with aromatic herbs
-          </p>
-        </div>
+<!-- 13 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Schezwan Dry">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Schezwan Dry</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Schezwan%20Dry%20-%20Rs%2090" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 90</a>
+  </div>
+  <p class="menu-ingredients">
+    Spicy and tangy chicken stir-fried with Schezwan sauce, chilies, and spring onions.
+  </p>
+</div>
 
-        <div class="menu-item filter-meats">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Mutton Biryani">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Mutton Biryani</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0AMutton%20Biryani%0ARs%20450" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 450</a>
-          </div>
-          <p class="menu-ingredients">
-            Fragrant basmati rice layered with tender mutton pieces, saffron, fried onions, and signature biryani spices
-          </p>
-        </div>
+<!-- 14 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Golden Dry">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Golden Dry</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Golden%20Dry%20-%20Rs%20130" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 130</a>
+  </div>
+  <p class="menu-ingredients">
+    Golden fried chicken pieces with a crispy coating and mild spice blend.
+  </p>
+</div>
 
-        <div class="menu-item filter-specialty">
-          <div class="menu-img">
-            <img src="./assets/images/starters.png" alt="Tandoori Kebab Platter">
-          </div>
-          <div class="menu-content">
-            <a href="#" class="menu-name">Tandoori Kebab Platter</a>
-            <a href="https://wa.me/919022274924?text=Order%3A%20%0ATandoori%20Kebab%20Platter%0ARs%20800" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color: #cda45e; background: #0c0b09; padding: 5px 15px; font-weight: 700; border-radius: 20px; font-size: 1rem; border: 2px solid #cda45e;">Rs 800</a>
-          </div>
-          <p class="menu-ingredients">
-            Assortment of chicken tikka, malai kebab, fish tikka, seekh kebab and lamb chops from our tandoor oven
-          </p>
-        </div>
+<!-- 15 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Crispy">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Crispy</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Crispy%20-%20Rs%20120" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 120</a>
+  </div>
+  <p class="menu-ingredients">
+    Deep-fried chicken strips coated with crispy batter and tossed with spicy sauce.
+  </p>
+</div>
+
+<!-- 16 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Achari Dry">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Achari Dry</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Achari%20Dry%20-%20Rs%2090" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 90</a>
+  </div>
+  <p class="menu-ingredients">
+    Chicken chunks cooked with tangy achar (pickle) spices for a zesty taste.
+  </p>
+</div>
+
+<!-- 17 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Hunan Dry">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Hunan Dry</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Hunan%20Dry%20-%20Rs%20100" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 100</a>
+  </div>
+  <p class="menu-ingredients">
+    Chinese-style chicken cooked in a spicy Hunan sauce with bold chili flavors.
+  </p>
+</div>
+
+<!-- 18 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Black Pepper">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Black Pepper</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Black%20Pepper%20-%20Rs%2090" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 90</a>
+  </div>
+  <p class="menu-ingredients">
+    Tender chicken sautéed with freshly crushed black pepper and mild spices.
+  </p>
+</div>
+
+<!-- 19 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Cheese Garlic Chilly">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Cheese Garlic Chilly</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Cheese%20Garlic%20Chilly%20-%20Rs%20110" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 110</a>
+  </div>
+  <p class="menu-ingredients">
+    Indo-Chinese chicken dish tossed with garlic, chilies, and cheesy goodness.
+  </p>
+</div>
+
+<!-- 20 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Honey Dry">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Honey Dry</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Honey%20Dry%20-%20Rs%20100" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 100</a>
+  </div>
+  <p class="menu-ingredients">
+    Crispy fried chicken glazed with sweet honey sauce and a hint of spice.
+  </p>
+</div>
+
+<!-- 21 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Tomato Dry">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Tomato Dry</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Tomato%20Dry%20-%20Rs%20100" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 100</a>
+  </div>
+  <p class="menu-ingredients">
+    Chicken chunks cooked with tangy tomato base, dry-fried with Indian spices.
+  </p>
+</div>
+
+<!-- 22 -->
+<div class="menu-item filter-starters">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Tandoori Masala Chilly">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Tandoori Masala Chilly</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Tandoori%20Masala%20Chilly%20-%20Rs%20110" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 110</a>
+  </div>
+  <p class="menu-ingredients">
+    Spicy chicken cooked with smoky tandoori masala and fresh green chilies.
+  </p>
+</div>
+
+
+<!-- 1 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Singapori">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Singapori</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Singapori%20-%20Rs%20200" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 200</a>
+  </div>
+  <p class="menu-ingredients">
+    A fusion Indo-Chinese chicken preparation with bold spices and tangy flavors.
+  </p>
+</div>
+
+<!-- 2 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Patiyala">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Patiyala</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Patiyala%20-%20Rs%20180" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 180</a>
+  </div>
+  <p class="menu-ingredients">
+    Punjabi-style chicken cooked in onion-tomato gravy with creamy, buttery richness.
+  </p>
+</div>
+
+<!-- 3 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Lababdar">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Lababdar</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Lababdar%20-%20Rs%20180" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 180</a>
+  </div>
+  <p class="menu-ingredients">
+    Tender chicken simmered in a creamy tomato-cashew gravy, full of rich Mughlai flavors.
+  </p>
+</div>
+
+<!-- 4 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Kashmiri">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Kashmiri</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Kashmiri%20-%20Rs%20200" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 200</a>
+  </div>
+  <p class="menu-ingredients">
+    A royal delicacy made with saffron, dry fruits, and a creamy nut-based gravy.
+  </p>
+</div>
+
+<!-- 5 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Raso">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Raso</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Raso%20-%20Rs%20180" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 180</a>
+  </div>
+  <p class="menu-ingredients">
+    Traditional spiced chicken curry prepared with fresh herbs and desi flavors.
+  </p>
+</div>
+
+<!-- 6 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Nawabi">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Nawabi</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Nawabi%20-%20Rs%20180" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 180</a>
+  </div>
+  <p class="menu-ingredients">
+    A Nawabi-style dish rich with cream, nuts, and exotic spices for a royal taste.
+  </p>
+</div>
+
+<!-- 7 -->
+<div class="menu-item filter-meats">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Jam-Jum">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Jam-Jum</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Jam-Jum%20-%20Rs%20180" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 180</a>
+  </div>
+  <p class="menu-ingredients">
+    A rich and spicy chicken dish bursting with exotic flavors and a touch of sweetness.
+  </p>
+</div>
+
+
+     <!-- 1 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Korean Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Korean Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Korean%20Rice%20-%20Rs%2090" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 90</a>
+  </div>
+  <p class="menu-ingredients">
+    Korean-style fried rice with chicken, veggies, and a hint of gochujang spice.
+  </p>
+</div>
+
+<!-- 2 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Chilli Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Chilli Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Chilli%20Rice%20-%20Rs%20110" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 110</a>
+  </div>
+  <p class="menu-ingredients">
+    Spicy stir-fried rice with chicken, green chilies, and bold Indo-Chinese flavors.
+  </p>
+</div>
+
+<!-- 3 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Dragon Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Dragon Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Dragon%20Rice%20-%20Rs%20120" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 120</a>
+  </div>
+  <p class="menu-ingredients">
+    Fiery dragon-style chicken rice with a smoky flavor and spicy Schezwan touch.
+  </p>
+</div>
+
+<!-- 4 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Turkis Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Turkis Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Turkis%20Rice%20-%20Rs%20130" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 130</a>
+  </div>
+  <p class="menu-ingredients">
+    Turkish-inspired chicken rice cooked with aromatic spices and rich flavors.
+  </p>
+</div>
+
+<!-- 5 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Triple Schezwan Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Triple Schezwan Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Triple%20Schezwan%20Rice%20-%20Rs%20130" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 130</a>
+  </div>
+  <p class="menu-ingredients">
+    A filling combo of rice, noodles, and Schezwan sauce topped with fried egg & chicken.
+  </p>
+</div>
+
+<!-- 6 -->
+<div class="menu-item filter-specialty">
+  <div class="menu-img">
+    <img src="./assets/images/starters.png" alt="Chicken Mezbaan Spl. Rice">
+  </div>
+  <div class="menu-content">
+    <a href="#" class="menu-name">Chicken Mezbaan Spl. Rice</a>
+    <a href="https://wa.me/919022274924?text=Order%3A%20Chicken%20Mezbaan%20Spl.%20Rice%20-%20Rs%20250" target="_blank" rel="noopener" class="menu-price" style="text-decoration:none; color:#cda45e; background:#0c0b09; padding:5px 15px; font-weight:700; border-radius:20px; font-size:1rem; border:2px solid #cda45e;">Rs 250</a>
+  </div>
+  <p class="menu-ingredients">
+    Our signature rice special – loaded with chicken, spices, dry fruits, and royal flavors.
+  </p>
+</div>
+
 
         <div class="menu-item filter-veg">
           <div class="menu-img">
@@ -649,6 +1234,49 @@
 }
 </style>
 
+  <style>
+  /* Search input styles */
+  .menu-search {
+    max-width: 760px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .menu-search input[type="search"] {
+    flex: 1 1 auto;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 2px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.03);
+    color: #fff;
+    outline: none;
+    font-size: 0.95rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .menu-search input[type="search"]::placeholder { color: rgba(255,255,255,0.5); }
+  .menu-search input[type="search"]:focus { border-color: #cda45e; box-shadow: 0 2px 12px rgba(205,164,94,0.12); }
+  .menu-search button#menuSearchClear {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 1.05rem;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .menu-search button#menuSearchClear:hover { color: #fff; background: rgba(255,255,255,0.03); }
+
+  @media (max-width: 768px) {
+    .menu-search { padding: 0 12px; margin-bottom: 12px; }
+    .menu-search input[type="search"] { font-size: 0.95rem; padding: 9px 12px; }
+  }
+  @media (max-width: 480px) {
+    .menu-search { width: 100%; box-sizing: border-box; padding: 0 8px; }
+    .menu-search button#menuSearchClear { font-size: 1rem; }
+  }
+  </style>
+
 <style>
 /* Modal Styles */
 .modal {
@@ -728,6 +1356,8 @@
   function initMenuFilters() {
     const menuFilters = document.querySelectorAll('.menu-filters li');
     const menuItems = document.querySelectorAll('.menu-container .menu-item');
+    const searchInput = document.getElementById('menuSearch');
+    const searchClear = document.getElementById('menuSearchClear');
     
     if (!menuFilters.length) return;
 
@@ -744,23 +1374,75 @@
         // Get filter data attribute
         const filterValue = this.getAttribute('data-filter');
         
-        // Show/hide menu items based on filter
-        menuItems.forEach(function(item) {
-          if (filterValue === '*') {
-            // Show all items
-            item.style.display = 'block';
-          } else {
-            // Hide all items first
-            item.style.display = 'none';
-            
-            // Show filtered items
-            if (item.classList.contains(filterValue.replace('.', ''))) {
-              item.style.display = 'block';
-            }
-          }
-        });
+        // Show/hide menu items based on filter and current search
+        applyFilters();
       });
     });
+
+    // Helper: get active filter value
+    function getActiveFilter() {
+      const active = document.querySelector('.menu-filters li.filter-active');
+      return active ? active.getAttribute('data-filter') : '*';
+    }
+
+    // Normalize text for searching
+    function normalizeText(s) {
+      return (s || '').toString().toLowerCase();
+    }
+
+    // Apply both category filter and search term
+    function applyFilters() {
+      const activeFilter = getActiveFilter();
+      const query = normalizeText(searchInput ? searchInput.value.trim() : '');
+
+      menuItems.forEach(function(item) {
+        // Category match
+        let categoryMatch = activeFilter === '*' || item.classList.contains(activeFilter.replace('.', ''));
+
+        // Search match: check name, ingredients (description), and price text
+        let searchMatch = true;
+        if (query) {
+          const name = normalizeText(item.querySelector('.menu-name') ? item.querySelector('.menu-name').textContent : '');
+          const desc = normalizeText(item.querySelector('.menu-ingredients') ? item.querySelector('.menu-ingredients').textContent : '');
+          const price = normalizeText(item.querySelector('.menu-price') ? item.querySelector('.menu-price').textContent : '');
+          searchMatch = name.indexOf(query) !== -1 || desc.indexOf(query) !== -1 || price.indexOf(query) !== -1;
+        }
+
+        if (categoryMatch && searchMatch) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Debounce utility
+    function debounce(fn, wait) {
+      let t;
+      return function() {
+        const args = arguments;
+        clearTimeout(t);
+        t = setTimeout(function() { fn.apply(null, args); }, wait);
+      };
+    }
+
+    // Wire up search input
+    if (searchInput) {
+      const debouncedApply = debounce(applyFilters, 180);
+      searchInput.addEventListener('input', function() {
+        // When user types, clear active filter if it was '*'? Keep category — we still respect it.
+        debouncedApply();
+      });
+
+      // Clear button
+      if (searchClear) {
+        searchClear.addEventListener('click', function() {
+          searchInput.value = '';
+          searchInput.focus();
+          applyFilters();
+        });
+      }
+    }
   }
 
   // Add location to WhatsApp order links
@@ -792,10 +1474,13 @@
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
       initMenuFilters();
+      // apply initial filters/search state
+      if (typeof applyFilters === 'function') try { applyFilters(); } catch(e) {}
       // addLocationToOrderLinks();
     });
   } else {
     initMenuFilters();
+    if (typeof applyFilters === 'function') try { applyFilters(); } catch(e) {}
     // addLocationToOrderLinks();
   }
 
@@ -909,7 +1594,7 @@
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2025 Hotel Mezbaan. All Rights Reserved | Designed and Developed by <a href="https://17dot.in"
+          &copy; 2025 Hotel Mezbaan. All Rights Reserved | Designed by <a href="https://17dot.in"
             target="_blank" class="link">17 Dot</a>
         </p>
 
@@ -1046,7 +1731,65 @@
       }
     });
   </script>
+  
+  <!-- Image preview modal -->
+  <div id="imageModal" class="image-modal" aria-hidden="true">
+    <div class="image-modal-overlay" data-image-modal-overlay></div>
+    <div class="image-modal-content" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button class="image-modal-close" aria-label="Close image preview">×</button>
+      <img src="" alt="" class="image-modal-img">
+    </div>
+  </div>
 
   <script src="./assets/js/script.js"></script>
+  <script>
+  (function(){
+    try {
+      const modal = document.getElementById('imageModal');
+      if (!modal) return;
+      const overlay = modal.querySelector('[data-image-modal-overlay]');
+      const imgEl = modal.querySelector('.image-modal-img');
+      const closeBtn = modal.querySelector('.image-modal-close');
+
+      function openModal(src, alt){
+        imgEl.src = src;
+        imgEl.alt = alt || '';
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal(){
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden','true');
+        imgEl.src = '';
+        imgEl.alt = '';
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.menu-img img').forEach(img=>{
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', ()=> openModal(img.dataset.large || img.src, img.alt));
+      });
+
+      document.querySelectorAll('.menu-name').forEach(name=>{
+        name.style.cursor = 'pointer';
+        name.addEventListener('click', function(e){
+          if (this.tagName.toLowerCase()==='a') e.preventDefault();
+          const item = this.closest('.menu-item');
+          if (!item) return;
+          const img = item.querySelector('.menu-img img');
+          if (img) openModal(img.dataset.large || img.src, img.alt || this.textContent.trim());
+        });
+      });
+
+      overlay && overlay.addEventListener('click', closeModal);
+      closeBtn && closeBtn.addEventListener('click', closeModal);
+      window.addEventListener('keydown', function(e){ if (e.key==='Escape') closeModal(); });
+    } catch (err) {
+      // fail silently — this script is a resilient fallback
+      console.warn('Image modal initializer failed', err);
+    }
+  })();
+  </script>
 </body>
 </html>
