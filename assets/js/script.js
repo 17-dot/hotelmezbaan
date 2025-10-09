@@ -21,10 +21,16 @@ navLinks.forEach(function(link) {
 
 const preloader = document.querySelector("[data-preaload]");
 
+// window.addEventListener("load", function () {
+//   preloader.classList.add("loaded");
+//   document.body.classList.add("loaded");
 window.addEventListener("load", function () {
-  preloader.classList.add("loaded");
-  document.body.classList.add("loaded");
+  setTimeout(() => {
+    preloader.classList.add("loaded");
+    document.body.classList.add("loaded");
+  }, 1000); // hide after 1 second (even if not all images loaded)
 });
+
 
 
 
@@ -237,5 +243,52 @@ window.addEventListener("mousemove", function (event) {
         }
       });
     })();
+
+
+  /**
+   * Lazy-load background images stored in data-bg attributes
+   * and ensure <img> elements have loading and decoding attributes.
+   */
+  ;(function() {
+    // Helper to set background-image
+    const setBg = (el, src) => {
+      if (!src) return;
+      el.style.backgroundImage = `url('${src}')`;
+      el.classList.add('bg-loaded');
+    };
+
+    // Observe elements with [data-bg]
+    const bgElements = document.querySelectorAll('[data-bg]');
+
+    if ('IntersectionObserver' in window) {
+      const bgObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const src = el.getAttribute('data-bg');
+            setBg(el, src);
+            observer.unobserve(el);
+          }
+        });
+      }, { rootMargin: '200px' });
+
+      bgElements.forEach(el => bgObserver.observe(el));
+    } else {
+      // Fallback: load all immediately
+      bgElements.forEach(el => setBg(el, el.getAttribute('data-bg')));
+    }
+
+    // Ensure <img> elements have loading="lazy" and decoding="async" if not present
+    const imgs = document.querySelectorAll('img');
+    imgs.forEach(img => {
+      try {
+        if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
+        if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
+      } catch (e) {
+        // ignore read-only SVG attributes or other unexpected elements
+      }
+    });
+
+  })();
 
 

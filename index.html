@@ -9,9 +9,97 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Hotel Mezbaan - Amazing & Delicious Food</title>
-  <meta name="title" content="Hotel Mezbaan - Amazing & Delicious Food">
-  <meta name="description" content="This is a Hotel Mezbaan website template.">
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Hotel Mezbaan — Best Hotel & Restaurant in Bhiwandi | Dhamankar Naka</title>
+  <meta name="title" content="Hotel Mezbaan — Best Hotel & Restaurant in Bhiwandi | Dhamankar Naka">
+  <meta name="description" content="Hotel Mezbaan — Traditional & hygienic dining at Patel Compound, Dhamankar Naka, Bhiwandi. Call +91 97633 33001 for bookings.">
+  <link rel="canonical" href="https://your-domain.example.com/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="Hotel Mezbaan">
+  <meta property="og:title" content="Hotel Mezbaan — Best Hotel & Restaurant in Bhiwandi">
+  <meta property="og:description" content="Traditional & hygienic dining at Patel Compound, Dhamankar Naka, Bhiwandi. Call +91 97633 33001 to reserve.">
+  <meta property="og:url" content="https://your-domain.example.com/">
+  <meta property="og:image" content="https://your-domain.example.com/assets/images/hero-slider-1.jpg">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hotel Mezbaan — Best Hotel in Bhiwandi">
+  <meta name="twitter:description" content="Visit Hotel Mezbaan at Patel Compound, Dhamankar Naka, Bhiwandi. Great food & friendly service.">
+  <meta name="twitter:image" content="https://your-domain.example.com/assets/images/hero-slider-1.jpg">
+
+  <meta name="image" content="https://your-domain.example.com/assets/images/hero-slider-1.jpg">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/mlogo.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- LocalBusiness structured data: replace domain and geo coordinates with exact values -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Hotel Mezbaan",
+    "alternateName": "Mezbaan Hotel",
+    "url": "https://your-domain.example.com/",
+    "logo": "https://your-domain.example.com/assets/images/mlogo.svg",
+    "image": [
+      "https://your-domain.example.com/assets/images/hero-slider-1.jpg",
+      "https://your-domain.example.com/assets/images/slider.png"
+    ],
+    "description": "Hotel Mezbaan — Traditional & hygienic dining in Patel Compound, Dhamankar Naka, Bhiwandi. Call +91 97633 33001.",
+    "telephone": "+919763333001",
+    "email": "booking@mezbaan.in",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Patel Compound, Dhamankar Naka",
+      "addressLocality": "Bhiwandi",
+      "postalCode": "421302",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 19.282,
+      "longitude": 73.028
+    },
+    "openingHours": "Mo-Su 12:30-16:00, Mo-Su 19:30-00:30",
+    "priceRange": "₹",
+    "hasMap": "https://maps.google.com/?q=Hotel+Mezbaan+Patel+Compound+Dhamankar+Naka+Bhiwandi",
+    "sameAs": [
+      "https://www.instagram.com/hotel__mezbaan"
+    ]
+  }
+  </script>
 
   <!-- 
     - favicon
@@ -117,7 +205,7 @@
     <div class="container">
 
       <a href="index.html" class="nav-logo">
-        <img src="./assets/images/mlogo.svg" width="100" height="40"  alt="Hotel Mezbaan - Home">
+        <img src="./assets/images/mlogo.svg" width="100" height="40" loading="lazy" decoding="async" alt="Hotel Mezbaan - Home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -127,7 +215,7 @@
         </button>
 
         <a href="index.html" class="logo">
-          <img src="./assets/images/mlogo.svg" width="100" height="40"  alt="Hotel Mezbaan - Home">
+          <img src="./assets/images/mlogo.svg" width="100" height="40" loading="lazy" decoding="async" alt="Hotel Mezbaan - Home">
         </a>
 
         <ul class="navbar-list">
@@ -233,7 +321,7 @@
           <li class="slider-item active" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/slider.png" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/slider.png" width="1880" height="950" alt="" class="img-cover" loading="lazy" decoding="async">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
@@ -258,7 +346,7 @@
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/slider 2.png" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/slider 2.png" width="1880" height="950" alt="" class="img-cover" loading="lazy" decoding="async">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
@@ -283,7 +371,7 @@
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/startes.png" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/startes.png" width="1880" height="950" alt="" class="img-cover" loading="lazy" decoding="async">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
@@ -316,7 +404,7 @@
         </button>
 
         <a href="tel:+919763333001" class="hero-btn has-after">
-          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" loading="lazy" decoding="async" alt="booking icon">
 
           <span class="label-2 text-center span">Visit</span>
         </a>
@@ -381,7 +469,7 @@
 
                 <a href="#" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/friedrice.png" width="285" height="336" loading="lazy" alt="Breakfast"
+                    <img src="./assets/images/friedrice.png" width="285" height="336" loading="lazy" decoding="async" alt="Breakfast"
                       class="img-cover">
                   </figure>
                 </a>
@@ -404,7 +492,7 @@
 
                 <a href="#" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/chickentandoorikabab.png" width="285" height="336" loading="lazy" alt="Appetizers"
+                    <img src="./assets/images/chickentandoorikabab.png" width="285" height="336" loading="lazy" decoding="async" alt="Appetizers"
                       class="img-cover">
                   </figure>
                 </a>
@@ -427,7 +515,7 @@
 
                 <a href="#" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/chickenbinarii.png" width="285" height="336" loading="lazy" alt="Drinks"
+                    <img src="./assets/images/chickenbinarii.png" width="285" height="336" loading="lazy" decoding="async" alt="Drinks"
                       class="img-cover">
                   </figure>
                 </a>
@@ -447,9 +535,9 @@
 
           </ul>
 
-          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+              <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" decoding="async" alt="shape"
             class="shape shape-1 move-anim">
-          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" decoding="async" alt="shape"
             class="shape shape-2 move-anim">
 
         </div>
@@ -476,15 +564,15 @@
 
           <div class="gallery-grid">
             <figure class="gallery-item">
-              <img src="./assets/images/hotel1.jpg" width="570" height="570" loading="lazy" alt="Gallery image 1" class="w-100">
+                <img src="./assets/images/hotel1.jpg" width="570" height="570" loading="lazy" decoding="async" alt="Gallery image 1" class="w-100">
             </figure>
 
             <figure class="gallery-item">
-              <img src="./assets/images/musa1.jpg" width="285" height="285" loading="lazy" alt="Gallery image 2" class="w-100">
+              <img src="./assets/images/musa1.jpg" width="285" height="285" loading="lazy" decoding="async" alt="Gallery image 2" class="w-100">
             </figure>
 
             <figure class="gallery-item">
-              <img src="./assets/images/hotel2.jpg" width="285" height="285" loading="lazy" alt="Gallery image 3" class="w-100">
+              <img src="./assets/images/hotel2.jpg" width="285" height="285" loading="lazy" decoding="async" alt="Gallery image 3" class="w-100">
             </figure>
 
             <!-- <figure class="gallery-item">
@@ -492,7 +580,7 @@
             </figure>
           </div> -->
 
-          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" decoding="async" alt="" class="shape">
 
         </div>
       </section>
@@ -521,7 +609,7 @@
         </div>
 
         <div class="special-dish-banner">
-          <img src="./assets/images/singapoore.jpg" width="940" height="900" loading="lazy" alt="special dish"
+        <img src="./assets/images/singapoore.jpg" width="940" height="900" loading="lazy" decoding="async" alt="special dish"
             class="img-cover">
         </div>
 
@@ -553,9 +641,9 @@
           </div>
         </div>
 
-        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+  <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" decoding="async" alt="" class="shape shape-1">
 
-        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+  <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" decoding="async" alt="" class="shape shape-2">
 
       </section>
 
@@ -585,7 +673,7 @@
               <div class="event-card has-before hover:shine">
 
                 <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/chickentandoorikabab.png" width="350" height="450" loading="lazy"
+                  <img src="./assets/images/chickentandoorikabab.png" width="350" height="450" loading="lazy" decoding="async"
                     alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
 
                   <!-- <time class="publish-date label-2" datetime="2022-09-15">Only on Friday</time> -->
@@ -607,7 +695,7 @@
               <div class="event-card has-before hover:shine">
 
                 <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/chickendumpulao.jpeg" width="350" height="450" loading="lazy"
+                  <img src="./assets/images/chickendumpulao.jpeg" width="350" height="450" loading="lazy" decoding="async"
                     alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
 
                   <time class="publish-date label-2" datetime="2022-09-08">Only on Sunday</time>
@@ -628,7 +716,7 @@
               <div class="event-card has-before hover:shine">
 
                 <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/soups.png" width="350" height="450" loading="lazy"
+                  <img src="./assets/images/soups.png" width="350" height="450" loading="lazy" decoding="async"
                     alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
 
                   <time class="publish-date label-2" datetime="2022-09-03">Everyday</time>
@@ -1055,7 +1143,7 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" decoding="async" alt="icon">
                 </div>
 
                 <h3 class="title-2 card-title">Hygienic Food</h3>
@@ -1069,7 +1157,7 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" decoding="async" alt="icon">
                 </div>
 
                 <h3 class="title-2 card-title">Fresh Environment</h3>
@@ -1083,7 +1171,7 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" decoding="async" alt="icon">
                 </div>
 
                 <h3 class="title-2 card-title">Skilled Chefs</h3>
@@ -1097,7 +1185,7 @@
               <div class="feature-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" decoding="async" alt="icon">
                 </div>
 
                 <h3 class="title-2 card-title">Weekly Offers</h3>
@@ -1112,8 +1200,8 @@
           <!-- <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
             class="shape shape-1"> -->
 
-          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
-            class="shape shape-2">
+          <!-- <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" decoding="async" alt="shape"
+            class="shape shape-2"> -->
 
         </div>
       </section>
@@ -1139,8 +1227,12 @@
     - #FOOTER
   -->
 
-  <footer class="footer section has-bg-image text-center"
-    style="background-image: url('./assets/images/footer-bg.jpg')">
+  <footer class="footer section has-bg-image text-center" data-bg="./assets/images/footer-bg.jpg">
+    <noscript>
+      <style>
+        .footer.has-bg-image { background-image: url('./assets/images/footer-bg.jpg'); }
+      </style>
+    </noscript>
     <div class="container">
 
       <div class="footer-top grid-list">
@@ -1148,7 +1240,7 @@
         <div class="footer-brand has-before has-after">
 
           <a href="#" class="logo">
-            <img src="./assets/images/mlogo.svg" width="110" height="40" loading="lazy" alt="Hotel Mezbaan home">
+            <img src="./assets/images/mlogo.svg" width="110" height="40" loading="lazy" decoding="async" alt="Hotel Mezbaan home">
           </a>
 
           <address class="body-4">
