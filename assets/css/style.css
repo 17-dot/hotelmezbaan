@@ -176,6 +176,8 @@
   --transition-1: 250ms ease;
   --transition-2: 500ms ease;
   --transition-3: 1000ms ease;
+  /* height for the fixed designer watermark bar shown above the header */
+  --designer-topbar-height: 36px;
 
 }
 
@@ -707,6 +709,35 @@ body.nav-active { overflow: hidden; }
   z-index: 4;
   border-block-end: 1px solid transparent;
   transition: var(--transition-1);
+}
+
+/* Designer topbar: small fixed watermark above header */
+.designer-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--designer-topbar-height);
+  line-height: var(--designer-topbar-height);
+  background: rgba(12,11,9,0.9);
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  font-size: 1.4rem;
+  z-index: 9998; /* below preloader but above most content */
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  padding: 0 12px;
+}
+
+/* Shift header and topbar down so they sit below the designer topbar */
+.header { top: var(--designer-topbar-height); }
+.topbar { top: var(--designer-topbar-height); }
+
+/* Slightly larger offset when header is active to preserve visual spacing */
+.header.active { top: calc(var(--designer-topbar-height) + 20px); }
+
+@media (max-width: 420px) {
+  :root { --designer-topbar-height: 30px; }
+  .designer-topbar { font-size: 1.2rem; }
 }
 
 .header.active {
